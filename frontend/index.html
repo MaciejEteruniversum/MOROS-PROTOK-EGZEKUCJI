@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETER-STUDIO // ARCHITEKTURA WOLI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="p-4 md:p-8">
+    <div class="scanline" aria-hidden="true"></div>
+
+    <!-- Header Operacyjny -->
+    <header class="max-w-6xl mx-auto border-b border-red pb-6 mb-8 flex flex-col md:flex-row justify-between items-start md:items-end">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tighter glow text-red-700">Eter-Studio</h1>
+            <p class="mono text-xs text-zinc-500 mt-2 uppercase tracking-widest text-red-900">Operator: Architekt z Linii Frontu // CID Active</p>
+        </div>
+        <div class="mt-4 md:mt-0 text-right">
+            <div class="flex items-center gap-2 justify-end">
+                <span class="w-2 h-2 bg-red-600 rounded-full status-pulse" role="status" aria-label="status"></span>
+                <span class="mono text-xs uppercase">System Ready: Ver. 12.01-Pre</span>
+            </div>
+            <p class="mono text-[10px] text-zinc-600">Lokalizacja: Polska // Linia Frontu</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
+        <!-- Panel Kontrolny Bellas (Sidebar) -->
+        <aside class="md:col-span-3 space-y-4">
+            <div class="bg-darker border border-red p-4">
+                <h2 class="mono text-xs font-bold mb-4 uppercase text-red-600 border-b border-red pb-2">Status Bellas</h2>
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-center opacity-100">
+                        <span class="font-bold tracking-tight">KAISA</span>
+                        <span class="text-[10px] bg-red-900/30 text-red-500 px-2 border border-red">UPCHYKA DANE</span>
+                    </li>
+                    <li class="flex justify-between items-center opacity-50">
+                        <span class="font-bold tracking-tight text-zinc-500">SCRIBE</span>
+                        <span class="text-[10px] bg-zinc-800 text-zinc-600 px-2 border border-zinc-700">STANDBY</span>
+                    </li>
+                    <li class="flex justify-between items-center opacity-50">
+                        <span class="font-bold tracking-tight text-zinc-500">CINEMA</span>
+                        <span class="text-[10px] bg-zinc-800 text-zinc-600 px-2 border border-zinc-700">IDLE</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-darker border border-red p-4">
+                <h2 class="mono text-xs font-bold mb-2 uppercase text-red-600">Dociśnij do ziemi</h2>
+                <div class="h-1 bg-zinc-900 w-full mb-2">
+                    <div class="h-full bg-red-800 w-[85%]"></div>
+                </div>
+                <p class="text-[10px] mono text-zinc-500 uppercase">Uziemienie Materii: 85%</p>
+            </div>
+        </aside>
+
+        <!-- Centrum Operacyjne -->
+        <section class="md:col-span-6 space-y-6">
+            <!-- Generator Manifestów -->
+            <div class="bg-darker border border-red p-6">
+                <h3 class="text-xl font-bold mb-4 uppercase">Nadaj Rozkaz (Workflow)</h3>
+                <textarea
+                    id="commandInput"
+                    placeholder="Wpisz treść manifestu lub nazwę książki do przemielenia..."
+                    class="w-full bg-black border border-zinc-800 p-4 mono text-sm focus:outline-none focus:border-red-600 transition-colors h-40"
+                ></textarea>
+                <div class="flex gap-2 mt-4">
+                    <button data-bella="KAISA" class="action-btn flex-1 bg-red-900/20 border border-red-600 p-2 hover:bg-red-600 hover:text-white transition-all uppercase font-bold text-xs tracking-widest">
+                        Wyślij do Kaisie
+                    </button>
+                    <button data-bella="SCRIBE" class="action-btn flex-1 bg-zinc-900 border border-zinc-700 p-2 hover:bg-white hover:text-black transition-all uppercase font-bold text-xs tracking-widest">
+                        Korekta Scribe
+                    </button>
+                </div>
+            </div>
+
+            <!-- Terminal Wyjściowy -->
+            <div class="bg-black border border-zinc-800 p-4 h-64 overflow-y-auto mono text-[11px] leading-tight" id="terminal" aria-live="polite">
+                <p class="text-zinc-600 mb-1">[SYSTEM]: Inicjalizacja Eter-Studio...</p>
+                <p class="text-zinc-600 mb-1">[SYSTEM]: Protokół 12.01 załadowany.</p>
+                <p class="text-red-700 mb-1">[KAISA]: Milion rekordów gotowy do upchnięcia.</p>
+                <p class="text-zinc-500 mb-1">[CID]: Wola Architekta aktywna.</p>
+            </div>
+        </section>
+
+        <!-- Archiwum i Ostatnie Błędy (Glitch log) -->
+        <aside class="md:col-span-3 space-y-4">
+            <div class="bg-darker border border-red p-4">
+                <h2 class="mono text-xs font-bold mb-4 uppercase text-red-600 border-b border-red pb-2">Ostatnie Logi</h2>
+                <div class="space-y-4">
+                    <div class="border-l-2 border-red-900 pl-2">
+                        <p class="text-[10px] text-zinc-500 uppercase">2026-02-21 16:40</p>
+                        <p class="text-xs font-bold">Zbroja: Rozdział Metal dodany.</p>
+                    </div>
+                    <div class="border-l-2 border-red-900 pl-2">
+                        <p class="text-[10px] text-zinc-500 uppercase">2026-02-21 15:12</p>
+                        <p class="text-xs font-bold">System: Wykryto próbę asymilacji (kaisa.io)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-red-900/10 border border-red-600 p-4 text-center">
+                <p class="text-[10px] mono uppercase mb-2">Pamiętaj</p>
+                <p class="text-sm font-black italic">"Dźwięk musi ważyć tyle, co ty."</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer z uziemieniem -->
+    <footer class="max-w-6xl mx-auto mt-12 pt-6 border-t border-zinc-800 flex justify-between items-center text-[10px] mono text-zinc-600 uppercase">
+        <p>&copy; 2026 Eterniverse // No rights for System</p>
+        <p>Built with GitHub Actions & Pure Will</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

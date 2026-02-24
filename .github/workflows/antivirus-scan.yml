@@ -1,0 +1,35 @@
+name: Antivirus Scan
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-and-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install -U pip
+          python -m pip install pytest
+
+      - name: Run tests
+        run: PYTHONPATH=src python -m pytest -q
+
+      - name: Run antivirus scan
+        run: |
+          PYTHONPATH=src python -m moros_protok.main scan . --signatures signatures.json > scan-output.json || true
+
+      - name: Upload scan results
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-output
+          path: scan-output.json

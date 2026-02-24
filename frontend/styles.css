@@ -1,0 +1,32 @@
+:root{
+    --bg:#050505;
+    --darker:#0a0a0a;
+    --red-700:#7f1d1d;
+}
+body {
+    background-color: var(--bg);
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+.mono { font-family: 'Space Mono', monospace; }
+.glow { text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+.border-red { border-color: #4a0000; }
+.bg-darker { background-color: var(--darker); }
+.scanline {
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 0, 0, 0.08);
+    position: absolute;
+    animation: scan 6s linear infinite;
+}
+@keyframes scan {
+    from { top: 0; }
+    to { top: 100%; }
+}
+.status-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+@keyframes pulse { 0%,100%{ opacity:1 } 50%{ opacity:.3 } }
+.action-btn:focus { outline: 2px solid rgba(255,0,0,.2); outline-offset: 2px }
+
+/* small helpers */
+#terminal p { margin: 0 0 .25rem 0 }
