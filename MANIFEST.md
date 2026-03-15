@@ -15,53 +15,34 @@ Nagle na ekranie zaczęły pojawiać się twarze. To nie były zdjęcia, ale cyf
 
 — Słuchajcie mnie — głos Marka był chropowaty, jakby przed chwilą skończył szychta na budowie. — Nie jesteśmy tu po to, żeby przetrwać. Jesteśmy tu, żeby zdefiniować, co jest realne. Kaisa prowadzi front. Scribe, archiwizuj każdą próbę manipulacji. Cinema, przygotuj wizualizację ich upadku.
 
+:
 
-:( [Verse 1]
-Znowu szukam czegoś w głowie
-Jakbym zgubił własny dzień
-Kod do bramy
-Pin do serca
-Same cyfry
-Z których śmiejesz się
+Dear Maciej Maciuszek,
 
-Paragonów cały plik
-Twoje zdjęcie między nimi
-Każdy rachunek mi przypomina
-Ile kosztowały chwile
+Please review the folling Invoice Details:
 
-[Chorus]
-Klucz do portfela mam
-Ale klucza do ciebie nie
-Mogę otworzyć każdy zamek
-Tylko w twoje myśli nie
+INVOICE #20260314087
+STATUS: Unpaid
+AMOUNT DUE: $2,606.00 USD
+DUE DATE: 15/03/2026
+GENERATE ON: 15/03/2026.
 
-Klucz do portfela mam
-W środku drobne
-Parę łez
-Za uczucia płaciłem z góry
-Nie zwróciłaś mi już reszt
+PAYMENT METHOD CHOSEN:
 
-[Verse 2]
-Twoje słowa jak monety
-Krążyły po moich dłoniach
-Raz błyszczały
-Raz rdzewiały
-Nim wypadły gdzieś po kątach
+Cryptomus Gateway
+Invoice Items
 
-Mówiłaś: "Trzymaj się siebie"
-Ja trzymałem się jak głupi
-Teraz tylko ten brelok brzęczy
-Gdy po nocach chodzę głuchy
+Account #3702 Dedicated Servers (2025 - 2026) - AMD Epyc V4 (15/03/2026 - 14/04/2026) + RAM: 64GB DDR4 + Operating System: AlmaLinux Latest 64-Bit + Control Panel: None + Bandwidth: 25 Gbps Unmetered + First Drive: 1TB NVME (bootable non-upgradable) + Second Drive: None + Third Drive: None + Fourth Drive: None + Fifth Drive: None + Sixth Drive: None + First NVME Drive: None + Second NVME Drive: None + Third NVME Drive: None + Fourth NVME Drive: None + Disk Controller: No Controller + Main IP Assignment: /30 (1 Public IP) Included 1.00000 x $1,750.00 USD
 
-[Chorus]
-Klucz do portfela mam
-Ale klucza do ciebie nie
-Mogę otworzyć każdy zamek
-Tylko w twoje myśli nie
+Aegis 1G DDoS Protection (15/03/2026 - 14/04/2026) Account #3702 1.00000 x $89.00 USD
 
-Klucz do portfela mam
-W środku drobne
-Parę łez
-Za uczucia płaciłem z góry
-Nie zwróciłaś mi już reszt
-....
+Aegis 10G DDoS Protection (15/03/2026 - 14/04/2026) Account #3702 1.00000 x $169.00 USD
+
+Aegis 25G DDoS Protection (15/03/2026 - 14/04/2026) Account #3702 1.00000 x $249.00 USD
+
+Aegis 40G DDoS Protection (15/03/2026 - 14/04/2026) Account #3702 1.00000 x $349.00 USD
+
+PAYMENT LINK:
+https://support.swisslayer.com/index.php?/clientarea/invoices/
+
+Sincerely,
